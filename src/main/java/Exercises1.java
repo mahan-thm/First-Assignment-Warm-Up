@@ -1,5 +1,5 @@
-import java.util.Scanner;
-
+import java.util.Scanner; 
+//s
 public class Exercises1 {
     public static long factorial(int n) {
         int result = 1;
