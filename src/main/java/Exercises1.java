@@ -1,5 +1,4 @@
-import java.util.Scanner; 
-//s
+import java.util.Scanner;
 public class Exercises1 {
     public static long factorial(int n) {
         int result = 1;
@@ -43,14 +42,16 @@ public class Exercises1 {
 
      */
     public static char[][] generateTriangle(int rows) {
-        for(int i = 1; i <= rows; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print('*');
+        char[][] tri = new char[rows][];
+        for (int i = 0; i < rows; i++) {
+            tri[i] = new char[i + 1];
+            for (int j = 0; j <= i; j++) {
+                tri[i][j] = '*';
             }
-            System.out.println();
         }
-        return null;
+        return tri;
     }
+
 
 
     public static void main(String[] args) {
